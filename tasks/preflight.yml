@@ -19,8 +19,6 @@
 
 - name: Gather currently installed bind_exporter version (if any)
   command: "/usr/local/bin/bind_exporter --version"
-  args:
-    warn: false
   changed_when: false
   register: __bind_exporter_current_version_output
   check_mode: false
